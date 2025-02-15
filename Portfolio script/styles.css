@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    color: #333;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Home Section */
+#home {
+    padding: 100px 20px 50px;
+    background: linear-gradient(to right, #007BFF, #00c6ff);
+    color: white;
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 4px solid white;
+}
+
+/* Sections */
+section {
+    padding: 60px;
+    margin: 40px auto;
+    background: white;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #007BFF;
+    font-size: 28px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #007BFF;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* Contact Section */
+#contact a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact a:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    section {
+        padding: 40px;
+    }
+    .profile-pic {
+        width: 130px;
+        height: 130px;
+    }
+}
